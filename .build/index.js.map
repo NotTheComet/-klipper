@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["import express from \"express\";\nimport path from \"path\";\n\nconst port = 3666;\n\nconst app = express();\n\napp.get('/', (req, res) => {\n\tres.send(\"<h3>yay</h3>\")\n});\n\napp.get('/api/:apikey/:apiquery', (req, res) => {\n\t\n\tconsole.log(req.params.apikey);\n\tconsole.log(req.params.apiquery);\n});\n\napp.listen(port, () => {\n  console.log(\"Started the Service\");\n});"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA,qBAAoB;AAGpB,MAAM,OAAO;AAEb,MAAM,UAAM,eAAAA,SAAQ;AAEpB,IAAI,IAAI,KAAK,CAAC,KAAK,QAAQ;AAC1B,MAAI,KAAK,cAAc;AACxB,CAAC;AAED,IAAI,IAAI,0BAA0B,CAAC,KAAK,QAAQ;AAE/C,UAAQ,IAAI,IAAI,OAAO,MAAM;AAC7B,UAAQ,IAAI,IAAI,OAAO,QAAQ;AAChC,CAAC;AAED,IAAI,OAAO,MAAM,MAAM;AACrB,UAAQ,IAAI,qBAAqB;AACnC,CAAC;",
+  "names": ["express"]
+}

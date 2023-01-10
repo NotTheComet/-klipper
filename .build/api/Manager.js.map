@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../api/Manager.ts"],
+  "sourcesContent": ["import path from 'path';\nimport os from 'os';\nimport fs from 'fs';\n\nexport class manager {\n\n  public nodes = [];\n\t\n\t\n\tpublic constructor() {\n\t\t\n\t}\n\n\tprivate SaveNode(node: Object) {\n\n    if (fs.existsSync('../config/nodes.json'))\n\t\t\n\t  console.log(\"saving connection data\");\n\t  return status \n\t}\n\n  private LoadNodes() {\n\t\treturn status\n\t}\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAEA,gBAAe;AAER,MAAM,QAAQ;AAAA,EAEZ,QAAQ,CAAC;AAAA,EAGV,cAAc;AAAA,EAErB;AAAA,EAEQ,SAAS,MAAc;AAE5B,QAAI,UAAAA,QAAG,WAAW,sBAAsB;AAEzC,cAAQ,IAAI,wBAAwB;AACpC,WAAO;AAAA,EACT;AAAA,EAES,YAAY;AACpB,WAAO;AAAA,EACR;AACD;",
+  "names": ["fs"]
+}

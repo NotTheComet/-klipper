@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../config.ts"],
+  "sourcesContent": ["import config from 'node-config';\nimport * as fs from 'fs';\nimport * as path from 'path';\n\n\nclass config {\n\n  public config = [];\n\t\n\tpublic constructor() {\n\t\tif (fs.existsSync('./config') == false ) { \n\t\t  fs.mkdir('./config', (err) => {\n\t\t\t  if (err) {\n\t\t\t\t  console.log('could not make the dir directory');\n\t\t\t  }\n\t\t  });\n\t  } else {\n\t\t\tconsole.log('Config File loaded');\n\t\t}\n\t}\n\n\tpublic get(query: string) {\n\t\treturn result \n\t}\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AACA,SAAoB;AAIpB,MAAM,OAAO;AAAA,EAEJ,SAAS,CAAC;AAAA,EAEX,cAAc;AACpB,QAAI,GAAG,WAAW,UAAU,KAAK,OAAQ;AACvC,SAAG,MAAM,YAAY,CAAC,QAAQ;AAC7B,YAAI,KAAK;AACR,kBAAQ,IAAI,kCAAkC;AAAA,QAC/C;AAAA,MACD,CAAC;AAAA,IACF,OAAO;AACP,cAAQ,IAAI,oBAAoB;AAAA,IACjC;AAAA,EACD;AAAA,EAEO,IAAI,OAAe;AACzB,WAAO;AAAA,EACR;AACD;",
+  "names": []
+}
